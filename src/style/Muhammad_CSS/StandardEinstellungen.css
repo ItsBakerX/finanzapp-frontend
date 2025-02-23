@@ -1,0 +1,53 @@
+
+/* Standard Einstellungen Anzeigen StandardEinstellungenAnzeigen.tsx */
+.standardContainer .label {
+  display: block;
+  font-size: 1rem;
+  color: black;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.standardContainer .select-standard-einstellungen .select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.3rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border-radius: 0.5em;
+  min-width: 10em;
+}
+
+.standardContainer .standard-title h2 {
+  font-size: 1.7em;
+  font-weight: bold;
+  color: black;
+
+}
+
+@media (max-width: 470px) {
+  .standardContainer .standard-title h2 {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 600px) {
+  .standardContainer .select-standard-einstellungen .select {
+      width: 60%;
+  }
+}
+
+@media (min-width: 768px) {
+  .standardContainer .select-standard-einstellungen .select {
+      width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .standardContainer .select-standard-einstellungen .select {
+      width: 30%;
+  }
+}
+
+/* Standard Einstellungen Anzeigen StandardEinstellungenAnzeigen.tsx */

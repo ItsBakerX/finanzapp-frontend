@@ -1,0 +1,144 @@
+/* PageDashboard.tsx */
+.dashboard-group {
+  padding: 1.75em 2em;
+  margin: 1.25em 0.75em;
+  background-color: white;
+  border-radius: 10px;
+}
+
+
+.dashboard-group h2,
+.analyse-seite h2 {
+  align-self: flex-start;
+
+}
+
+.header-button-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.buchungen-group {
+  margin: 2em 0 0 0;
+}
+
+.analysis-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2em 0 0 0;
+}
+
+.diagramm-group {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  flex-direction: column;
+}
+
+.dashboard-desktop h2 {
+  margin-left: 1em;
+}
+
+.dashboard-group .button {
+  background: rgba(255, 255, 255, 0.5);
+  color: black;
+  border: solid 1px black;
+  border-radius: 0.7em;
+  cursor: pointer;
+  padding: 0.4em 1.25em;
+}
+
+.diagramm {
+  flex: 1 1 calc(50% - 1em);
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  margin-bottom: 2em;
+}
+
+.dashboard-group .button:hover {
+  color: white;
+  background: black;
+}
+
+@media screen and (max-width: 650px) {
+  .dashboard-group {
+    padding: 1.75em 1.25em;
+    gap: 0;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .diagramm-group {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .diagramm {
+    width: 50%;
+    margin-bottom: 2em;
+    flex-wrap: wrap;
+  }
+
+  .diagramm2 {
+    width: 50%;
+  }
+
+}
+
+@media screen and (min-width: 1500px) {
+
+  .dashboard-desktop {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .dashboard-desktop1 {
+    width: 65%;
+    padding-right: 1.4em;
+  }
+
+  .dashboard-desktop2 {
+    width: 35%;
+    padding-left: 1.4em;
+  }
+
+  .buchungen-group {
+    margin: 0;
+  }
+
+  .header-button-group {
+    margin: 0 0 1.2em 0;
+  }
+
+  .diagramm-group {
+    margin-top: 0;
+  }
+}
+
+
+body.dark-mode .dashboard-group {
+  background-color: #FFFFFF1F;
+}
+
+body.dark-mode .dashboard-group h1 {
+  color: white;
+}
+
+body.dark-mode .dashboard-desktop h2 {
+  color: white;
+}
+
+
+
+
+
+/* PageDashboard.tsx */

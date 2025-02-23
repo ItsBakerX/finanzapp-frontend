@@ -1,0 +1,486 @@
+.benutzerdefinierte-sparziele-container img {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+
+.benutzerdefinierte-sparziele-container .sparzielCard {
+  border: 2px solid #E5F7F6;
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  margin-bottom: 1em;
+}
+
+.sparzielCards {
+  margin-top: 1.5em;
+}
+
+
+.sparzielTitleAndButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.sparzielErstellenButton {
+  border-radius: 8px;
+  padding: 12px;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #00ADA5;
+  color: white;
+
+}
+
+.sparzielErstellenButton:hover {
+  background-color: #008E87;
+}
+
+.sparziel-name {
+  flex: 1;
+  text-align: left;
+  font-weight: bold;
+  color: black;
+}
+
+.sparziel-center {
+  flex: 2;
+  text-align: center;
+  font-size: 1em;
+  justify-content: space-between;
+  color: black;
+}
+
+.sparziel-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.field:not(:last-of-type) {
+  display: flex;
+  gap: 1em;
+}
+
+.field div {
+  flex: 1 1;
+}
+
+.sparziel-name p {
+  margin: 0.5em 0;
+  font-size: 1.4em;
+  color: black;
+}
+
+.sparzielOptionsMobile {
+  display: none;
+}
+
+.sparzielOptionsPC {
+  margin-left: auto;
+  align-self: center;
+}
+
+.sparziel-center p {
+  margin: 1.2em 0;
+  color: black;
+}
+
+.sparziel-right p {
+  margin: 0.2em 0;
+  color: white;
+}
+
+.sparzielTutorial {
+  font-size: 14px;
+  margin: 0.5em 0 0.5em 1.5em;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000000001;
+  overflow-y: auto;
+}
+
+
+
+.sparziel-form .label {
+  font-weight: bold;
+  color: black;
+}
+
+.sparziel-form .input {
+  padding: 0.7em;
+  border-radius: 0.5em;
+  background: white;
+  width: 100%;
+  border: 1px solid #ccc;
+  color: black;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+.input::placeholder {
+  color: black;
+}
+
+
+
+.sparziel-form .help {
+  font-size: 0.875em;
+  color: #777;
+  margin-top: 0.25em;
+}
+
+.sparziel-card {
+  overflow-y: auto;
+  width: 50%;
+  border-radius: 1em;
+}
+
+.overlay {
+  padding: 2em;
+}
+
+.sparziel-form .input {
+  padding: 0.6em;
+  font-size: 1em;
+}
+
+
+.sparziel-form .label {
+  font-size: 1em;
+}
+
+
+.options-button {
+  border: none;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+}
+
+.options-dropdown {
+  position: absolute;
+  top: 5.5em;
+  right: 2em;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 8em;
+  height: 5.6em;
+  z-index: 10;
+}
+
+.options-dropdown a {
+  display: block;
+  padding: 0.5em 1em;
+  color: black;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+.options-dropdown a:hover {
+  background: #ccc;
+}
+
+.sparzielItem1 {
+  padding: 1em;
+  background-color: #E5F7F6;
+  border-radius: 2px 10px 10px 2px;
+  font-size: 18px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+
+.sparzielName {
+  font-weight: bold;
+}
+
+.sparzielBetrag,
+.sparzielTage,
+.sparzielNotiz {
+  font-size: 0.8em;
+  font-weight: normal;
+}
+
+
+.sparzielItem2 {
+  padding-left: 0.5em;
+  font-size: 18px;
+  font-weight: bold;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+.sparzielItem2 span {
+  font-weight: normal;
+}
+
+.fortschrittsbalkenItem2 {
+  background-color: #e6e6e6;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.fortschrittsbalken {
+  max-width: 100%;
+  height: 27px;
+  background-color: #00ADA5;
+  border-radius: 5px;
+}
+
+.fortschrittsbalken p {
+  position: absolute;
+  margin-left: 7px;
+  line-height: 27px;
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+@media screen and (min-width: 1500px) {
+
+
+  .sparzielItem1 {
+    font-size: 24px;
+
+  }
+
+  .sparzielItem2 {
+    font-size: 24px;
+  }
+
+}
+
+@media screen and (max-width: 850px) {
+
+  .sparzielCard {
+    flex-direction: column;
+  }
+
+  .sparzielTitleAndButton {
+    flex-direction: column;
+  }
+
+  .profilMenuTitle,
+  .sparzielTitleAndButton {
+    margin-bottom: 0;
+  }
+
+  .sparzielOptionsMobile {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+  }
+
+  .sparzielOptionsPC {
+    display: none;
+  }
+
+
+  .sparzielErstellenButton {
+    width: 100%;
+  }
+
+  .sparzielItem1,
+  .sparzielItem2 {
+    width: 100%;
+    padding: 1em;
+    box-sizing: border-box;
+  }
+
+  .sparzielItem1 {
+    border-radius: 2px 2px 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1em;
+  }
+
+  .sparzielItem1 .betragTage p {
+    font-size: 0.8em;
+    color: gray;
+  }
+
+  .options-button {
+    color: black
+  }
+
+  .options-dropdown {
+    top: 4em;
+    width: 7em;
+    height: 5.5em;
+  }
+
+  .overlay {
+    padding: 1em;
+  }
+
+  .sparziel-card {
+    width: 98%;
+    padding: 1em;
+  }
+
+  .sparziel-form .label {
+    font-size: 0.9em;
+  }
+
+  .field:not(:nth-of-type(2)) {
+    flex-direction: column;
+    gap: 1em;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .sparzieleTitle {
+    margin: 0.5em 0 0 0;
+  }
+
+  .sparzielNameBetragTage {
+    width: 80%;
+  }
+
+  .sparzielTutorial {
+    margin: 0;
+  }
+
+  .options-dropdown {
+    top: 3.5em;
+    right: 1.5em;
+    width: 6em;
+    height: 4.5em;
+  }
+
+  .options-dropdown a {
+    font-size: 0.9em;
+  }
+
+
+}
+
+
+body.dark-mode .overlay {
+  background-color: rgba(30, 30, 30, 0.8);
+}
+
+body.dark-mode .sparziel-card {
+  background-color: #1e1e1e;
+  /* border: 1px solid #444444; */
+  color: #ffffff;
+}
+
+body.dark-mode .sparziel-form .label {
+  color: #ffffff;
+}
+
+body.dark-mode .sparziel-form .eingabeFeld,
+body.dark-mode .sparziel-form textarea {
+  background-color: #2c2c2c;
+  color: #ffffff;
+}
+
+body.dark-mode .sparzieleTitle {
+  color: #ffffff;
+}
+
+body.dark-mode .sparziel-form .eingabeFeld::placeholder {
+  color: #aaaaaa;
+}
+
+body.dark-mode .sparziel-form .help {
+  color: #bbbbbb;
+}
+
+body.dark-mode .sparzielErstellenButton {
+  background-color: #00ada5;
+  color: #ffffff;
+}
+
+body.dark-mode .sparzielErstellenButton:hover {
+  background-color: #008e87;
+}
+
+body.dark-mode .sparzielCard {
+  border: 2px solid #1C2D2C;
+}
+
+body.dark-mode .sparzielItem1 {
+  background-color: #1C2D2C;
+}
+
+body.dark-mode .sparzielName,
+body.dark-mode .sparzielBetrag,
+body.dark-mode .sparzielTage,
+body.dark-mode .sparzielNotiz,
+body.dark-mode .sparzielZielbetrag,
+body.dark-mode .sparzielFaelligkeitsdatum {
+  color: #ffffff;
+}
+
+body.dark-mode .sparzielZielbetrag span,
+body.dark-mode .sparzielFaelligkeitsdatum span {
+  color: #ffffff;
+}
+
+body.dark-mode .fortschrittsbalkenItem2 {
+  background-color: #444444;
+}
+
+body.dark-mode .fortschrittsbalken {
+  background-color: #00ada5;
+}
+
+body.dark-mode .fortschrittsbalken p {
+  color: #ffffff;
+}
+
+body.dark-mode .options-dropdown {
+  background-color: #2e2e2e;
+  border: 1px solid #555555;
+}
+
+body.dark-mode .options-dropdown a {
+  color: #ffffff;
+}
+
+body.dark-mode .options-dropdown a:hover {
+  background-color: #444444;
+}
+
+body.dark-mode .sparzielTutorial {
+  color: #bbbbbb;
+}
+
+body.dark-mode .sparzielTitleAndButton h2 {
+  color: #ffffff;
+}
+
+/* Icons */
+body.dark-mode .sparzielOptionsMobile img,
+body.dark-mode .sparzielOptionsPC img {
+  filter: invert(1);
+  /* Icons invertieren für bessere Sichtbarkeit */
+}

@@ -1,0 +1,51 @@
+/* PageDashboard.tsx */
+
+.analyse-seite {
+  padding: 1.75em 2em;
+  margin: 1.25em 0.75em;
+  min-height: 100vh;
+  background-color: white;
+  border-radius: 10px;
+}
+
+
+@media screen and (max-width: 650px) {
+  .analyse-seite {
+    padding: 1.75em 1.25em;
+  }
+
+  .gesamt-kategorie-card-analysen canvas {
+    width: 50%;
+  }
+}
+
+/* PageDashboard.tsx */
+
+body.dark-mode .analyse-group {
+  background-color: #FFFFFF1F;
+  color: #ffffff;
+}
+
+body.dark-mode .analyse-group h2 {
+  color: #ffffff;
+}
+
+body.dark-mode .analyse-seite {
+  background-color: #FFFFFF1F;
+}
+
+body.dark-mode .analyse-seite h2 {
+  color: white;
+}
+
+body.dark-mode .analysen-card {
+  background-color: #1C2D2C;
+}
+
+body.dark-mode .analysen p {
+  color: white;
+}
+
+body.dark-mode .analysen-card .analysen-card-img {
+  filter: invert(1);
+}

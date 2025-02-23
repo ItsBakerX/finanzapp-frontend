@@ -1,0 +1,457 @@
+/* Pocket Seite Profil.tsx */
+
+
+.pocket-form .label {
+  font-weight: bold;
+  color: black;
+}
+
+.pocket-form .input {
+  padding: 0.625em;
+  border: none;
+  border-radius: 0.5em;
+  box-sizing: border-box;
+  background: white;
+  border: 1px solid #ccc;
+  color: black
+}
+
+.pocket-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.pocket-card {
+  background: white;
+  border-radius: 1em;
+  width: 50em;
+}
+
+.pocket-card-header {
+  margin-bottom: 1em;
+}
+
+.pocket-card-header-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: black;
+}
+
+.pocket-card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.pocket-field {
+  margin-bottom: 1em;
+}
+
+.pocket-label {
+  font-weight: bold;
+  color: black;
+}
+
+.pocket-control {
+  margin-top: 0.5em;
+}
+
+.pocket-input {
+  padding: 0.7em;
+  border-radius: 0.5em;
+  background: white;
+  width: 100%;
+  border: 1px solid #ccc;
+  color: black;
+}
+
+@media (max-width: 600px) {
+  .pocket-card {
+    width: 90%;
+    height: auto;
+  }
+
+  .pocket-card-header-title {
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  .pocket-form .input {
+    padding: 0.5em;
+    font-size: 0.9em;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .pocket-card {
+    height: auto;
+    width: 90%;
+  }
+
+  .pocket-card-header-title {
+    font-size: 1.4em;
+  }
+
+}
+
+@media (min-width: 1025px) {
+  /* .pocket-card {
+    width: 50em;
+    height: 30em;
+  }
+
+  .pocket-card-header-title {
+    font-size: 1.5em;
+  }
+
+  .pocket-form .input {
+    padding: 0.7em;
+    font-size: 1.1em;
+  } */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.profilMenuContainer {
+  width: 30%;
+}
+
+.profilMenuPC {
+  display: flex;
+  flex-direction: column;
+}
+
+.menuItem {
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 0.5em;
+  padding: 0.3em;
+  border-radius: 5px;
+}
+
+.menuItem:last-of-type {
+  margin-top: 1em;
+}
+
+.pocketErstellenButton {
+  border-radius: 8px;
+  padding: 12px;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #00ADA5;
+  color: white;
+
+}
+
+.pocketErstellenButton:hover {
+  background-color: #008E87;
+}
+
+.pocketTitleAndButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.selectedContent {
+  width: 70%;
+  overflow-y: auto;
+}
+
+.pocketCards {
+  margin-top: 1.5em;
+}
+
+.pocketCard {
+  border: 1px solid #E5F7F6;
+  border-radius: 10px;
+  margin-bottom: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  flex-direction: row;
+}
+
+.pocketItem1 {
+  padding: 1em;
+  background-color: #E5F7F6;
+  border-radius: 6px;
+  flex-grow: 1;
+  width: 30%;
+  font-size: 18px;
+}
+
+.pocketItem2 {
+  padding-left: 0.5em;
+  flex-grow: 2;
+  width: 60%;
+  font-size: 18px;
+}
+
+.pocketItem2 span {
+  font-weight: normal;
+}
+
+.pocketOptionsPC {
+  margin-left: auto;
+  align-self: center;
+}
+
+.pocketGuthaben,
+.pocketTitle {
+  font-weight: bold;
+}
+
+.pocketNotiz,
+.pocketHistory {
+  font-size: 0.8em;
+}
+
+.pocketsStand,
+.pocketsTutorial {
+  font-size: 14px;
+  margin: 0.5em 0 0.5em 1.5em;
+}
+
+.pocketsTitle {
+  margin: 1em 0 0.5em 0;
+}
+
+.profilMenuMobile,
+.pocketOptionsMobile {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+
+
+
+  .pocket .pocketCard {
+    flex-direction: column;
+  }
+
+  .pocketItem1,
+  .pocketItem2 {
+    padding: 1em;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .profilMenuTitle,
+  .pocketTitleAndButton {
+    margin-bottom: 0;
+  }
+
+  .pocketItem1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .pocketOptionsPC {
+    display: none;
+  }
+
+  .pocketOptionsMobile {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+  }
+
+  .pocketTitleAndButton {
+    flex-direction: column;
+  }
+
+  .pocketTitleAndButton {
+    margin-bottom: 1em;
+  }
+
+  .pocketField h3 {
+    margin-top: 1em;
+  }
+}
+
+
+@media screen and (max-width: 650px) {
+  .profilMenuPC {
+    display: none;
+  }
+
+  .profilMenuMobile {
+    display: inline;
+    width: 100%;
+  }
+
+  .selectedField {
+    width: 100%;
+  }
+
+
+  .pocketField h3 {
+    font-size: 20px;
+  }
+
+  .pocketErstellenButton {
+    width: 100%;
+  }
+
+  .pocketTitleHistory {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .pocketItem1 {
+    font-size: 24px;
+  }
+
+  .pocketItem2 {
+    font-size: 24px;
+    width: 70%;
+  }
+
+
+
+  .pocketsStand,
+  .pocketsTutorial {
+    font-size: 18px;
+  }
+
+  /* .pocketErstellenButton {
+    font-size: 18px;
+  } */
+
+  .options-dropdown {
+    right: 1.5em;
+    width: 6em;
+    height: 4.5em;
+  }
+
+
+}
+
+
+body.dark-mode .pocket-overlay {
+  background-color: rgba(30, 30, 30, 0.8);
+}
+
+body.dark-mode .pocket-card {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .pocket-form .label {
+  color: #ffffff;
+}
+
+body.dark-mode .pocket-form .eingabeFeld,
+body.dark-mode .pocket-form textarea {
+  background-color: #2c2c2c;
+  color: #ffffff;
+}
+
+body.dark-mode .pocket-form .eingabeFeld::placeholder {
+  color: #aaaaaa;
+}
+
+body.dark-mode .pocketTitleAndButton h2 {
+  color: #ffffff;
+}
+
+body.dark-mode .pocketErstellenButton {
+  background-color: #00ada5;
+  color: #ffffff;
+}
+
+body.dark-mode .pocketErstellenButton:hover {
+  background-color: #008e87;
+}
+
+body.dark-mode .pocketCard {
+  border: 1px solid #1C2D2C;
+}
+
+body.dark-mode .pocketItem1 {
+  background-color: #1C2D2C;
+}
+
+body.dark-mode .pocketGuthaben,
+body.dark-mode .pocketTitle,
+body.dark-mode .pocketNotiz,
+body.dark-mode .pocketHistory {
+  color: #ffffff;
+}
+
+body.dark-mode .pocketsStand,
+body.dark-mode .pocketsTutorial {
+  color: #aaaaaa;
+}
+
+body.dark-mode .pocketField h3 {
+  color: white;
+}
+
+body.dark-mode .field p {
+  color: white;
+}
+
+
+
+body.dark-mode .pocketOptionsMobile img,
+body.dark-mode .pocketOptionsPC img {
+  filter: invert(1);
+  /* Icons invertieren für bessere Sichtbarkeit */
+}
+
+/* Responsive Anpassungen */
+/* @media screen and (max-width: 850px) {
+  body.dark-mode .pocketCard {
+    background-color: #2e2e2e;
+    border: 1px solid #555555;
+  }
+
+  body.dark-mode .pocketTitleAndButton {
+    color: #ffffff;
+  }
+
+}
+
+@media screen and (max-width: 650px) {
+  body.dark-mode .pocketCard {
+    background-color: #333333;
+    border: 1px solid #555555;
+  }
+
+
+} */

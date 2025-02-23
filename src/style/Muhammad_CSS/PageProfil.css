@@ -1,0 +1,398 @@
+/* Profil Container */
+.profil-container {
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+}
+
+.card {
+  background: white;
+  padding: 1em;
+  border-radius: 1em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  width: 80em;
+  height: 40em;
+  overflow-y: scroll;
+  gap: 2em;
+}
+
+/* Menübereich */
+.menu-container {
+  width: 20%;
+}
+
+.card-header-title {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 1em;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item {
+  color: black;
+  text-decoration: none;
+  margin-bottom: 1em;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu-item.active {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+/* Inhaltsbereich */
+.content-container {
+  width: 75%;
+}
+
+.content-header-title {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 1em;
+
+}
+
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .menu-container {
+    width: 100%;
+    border-right: none;
+    padding-bottom: 1em;
+  }
+
+  .content-container {
+    width: 100%;
+    padding-top: 1em;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#profilMain {
+  display: flex;
+  gap: 2em;
+  margin: 1.25em 0.75em;
+  background-color: white;
+  padding: 1.75em 2em;
+  border-radius: 10px;
+  min-height: 80vh;
+}
+
+.profilMenuContainer {
+  width: 30%;
+}
+
+.profilMenuPC {
+  display: flex;
+  flex-direction: column;
+}
+
+.menuItem {
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 0.5em;
+  padding: 0.3em;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+}
+
+.menuItem:last-of-type {
+  margin-top: 1em;
+}
+
+.selectedFieldTitleAndButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profilMenuTitle,
+.selectedContentHeader {
+  margin-bottom: 2.5em;
+}
+
+.selectedContentHeader {
+  align-self: center;
+}
+
+.menuItem.active {
+  background-color: #E5F7F6;
+  font-weight: bold;
+}
+
+.profilMenuMobile,
+.pocketOptionsMobile {
+  display: none;
+}
+
+
+@media screen and (max-width: 850px) {
+
+  .profilMenuMobile {
+    display: inline;
+    width: 100%;
+  }
+
+  .pocketCard {
+    flex-direction: column;
+  }
+
+  .pocketItem1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .pocketOptionsPC {
+    display: none;
+  }
+
+  .pocketOptionsMobile {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .profilMenuPC {
+    display: none;
+  }
+
+  #profilMain h2 {
+    font-size: 28px;
+  }
+
+  #profilMain {
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+  }
+
+  .profilMenuContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 1em;
+  }
+
+  .profilMenuMobile {
+    display: inline;
+    width: 100%;
+  }
+
+  .selectedContent {
+    width: 100%;
+    height: 90%;
+  }
+
+  .profilMenuTitle,
+  .selectedFieldTitleAndButton {
+    margin-bottom: 0;
+  }
+
+  .selectedFieldTitleAndButton {
+    flex-direction: column;
+  }
+
+  .pocketErstellenButton {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 650px) {
+
+  #profilMain h2 {
+    font-size: 26px;
+  }
+
+  .profilMenuPC {
+    display: none;
+  }
+
+  .profilMenuContainer {
+    flex-direction: column;
+    justify-content: left;
+    gap: 0;
+  }
+
+
+  .selectedField {
+    width: 100%;
+  }
+
+  .selectedContent h3 {
+    font-size: 20px;
+  }
+
+
+  .profilMenuTitle,
+  .selectedFieldTitleAndButton {
+    margin-bottom: 0;
+  }
+
+  .selectedFieldTitleAndButton {
+    flex-direction: column;
+  }
+
+  .pocketErstellenButton {
+    width: 100%;
+  }
+
+  .pocketsStand,
+  .pocketsTutorial {
+    font-size: 14px;
+    margin: 0 0 0 0;
+  }
+
+  .pocketsTitle {
+    margin: 0.5em 0 0 0;
+  }
+}
+
+
+body.dark-mode #profilMain {
+  background-color: #FFFFFF1F;
+  color: #ffffff;
+}
+
+body.dark-mode .profilMenuTitle {
+  color: #ffffff;
+}
+
+body.dark-mode .menuItem {
+  color: #ffffff;
+  /* background-color: #333333; */
+}
+
+body.dark-mode .selectedContent * {
+  color: #ffffff;
+}
+
+body.dark-mode .menuItem.active {
+  background-color: #1C2D2C;
+  font-weight: bold;
+}
+
+body.dark-mode .menuItem img {
+  filter: invert(1)
+}
+
+body.dark-mode .menuItem:hover {
+  background-color: #444444;
+}
+
+
+body.dark-mode .selectBox {
+  background-color: #2c2c2c;
+  border: 1px solid #444;
+}
+
+body.dark-mode .selectBox option {
+  background-color: #2e2e2e;
+  color: #ffffff;
+}
+
+body.dark-mode .kategorieErstellenButton {
+  background-color: #008e87;
+  color: #ffffff;
+}
+
+body.dark-mode .kategorieErstellenButton:hover {
+  background-color: #00ada5;
+}
+
+body.dark-mode .pocketErstellenButton {
+  background-color: #008e87;
+  color: #ffffff;
+}
+
+body.dark-mode .pocketErstellenButton:hover {
+  background-color: #00ada5;
+}
+
+/* Mobile Menu Dark Mode */
+body.dark-mode .profilMenuMobile {
+  background-color: #2e2e2e;
+}
+
+body.dark-mode .profilMenuMobile select {
+  background-color: #333333;
+  color: #ffffff;
+  border: 1px solid #555555;
+}
+
+/* Responsive Anpassungen */
+@media screen and (max-width: 850px) {
+  body.dark-mode #profilMain {
+    padding: 1em;
+    gap: 1em;
+  }
+
+  body.dark-mode .profilMenuContainer {
+    gap: 1em;
+  }
+
+  body.dark-mode .menuItem {
+    padding: 0.5em;
+  }
+
+  body.dark-mode .menuItem.active {
+    background-color: #444444;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  body.dark-mode .profilMenuContainer {
+    flex-direction: column;
+  }
+
+  body.dark-mode .selectBox {
+    width: 100%;
+  }
+
+  body.dark-mode .pocketErstellenButton,
+  body.dark-mode .kategorieErstellenButton {
+    width: 100%;
+  }
+}

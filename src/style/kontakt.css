@@ -1,0 +1,93 @@
+.kontakt {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin: 1em auto 4em auto;
+  max-width: 600px;
+  padding: 0 20px;
+}
+
+.paragraph_kontakt {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 10px;
+  margin-bottom: 3em;
+  width: 100%;
+}
+
+.title_kontakt {
+  font-size: 2em;
+  margin-bottom: 0 !important;
+}
+
+.kontakt_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: left !important;
+  justify-content: left;
+  margin-top: -2em;
+  width: 100%;
+}
+
+.kontakt_form label {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: -1em;
+}
+
+#anliegen {
+  width: 100%;
+  /* Matches the width of the container */
+  max-width: 200px;
+  /* Restricts the width for better alignment */
+}
+
+#message {
+  height: 10em;
+  width: 100%;
+}
+
+.submitButton_kontakt {
+  background-color: #00ada5;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+  align-self: center;
+  /* Centers the button */
+}
+
+.eingabeFeld::placeholder {
+  font-size: 1.1em;
+}
+
+.opt {
+  font-size: 1.1em;
+}
+
+@media screen and (max-width: 850px) {
+  .kontakt {
+    max-width: 90%;
+  }
+
+  #anliegen {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .kontakt {
+    width: 90%;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  #anliegen {
+    width: 35%;
+  }
+}
+
+body.dark-mode .kontakt * {
+  color: #ffffff;
+}

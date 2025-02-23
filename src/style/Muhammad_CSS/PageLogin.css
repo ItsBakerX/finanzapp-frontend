@@ -1,0 +1,179 @@
+/*Login-Dialog Login.tsx*/
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5em auto;
+}
+
+.error-message {
+  color: red;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2em;
+  border-radius: 0.5em;
+  width: 30em;
+}
+
+.login-form h1 {
+  margin-bottom: 1em;
+}
+
+.login-form label {
+  align-self: flex-start;
+  margin-bottom: 0.5em;
+  font-size: 1em;
+  color: black;
+  margin-left: 0.5em;
+
+}
+
+.login-form input {
+  margin-bottom: 1em;
+  padding: 1em;
+  width: 100%;
+  border: none;
+  border-radius: 0.5em;
+  background-color: #ffffff;
+}
+
+.password-container {
+  position: relative;
+  width: 100%;
+}
+
+.error-border {
+  border: 1px solid red !important;
+}
+
+.password-container input {
+  padding-right: 2.5em;
+}
+
+.password-container .toggle-password {
+  position: absolute;
+  margin-top: -0.5em;
+  top: 50%;
+  right: 1em;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.login-form button {
+  padding: 1em 2em;
+  border: none;
+  border-radius: 0.5em;
+  width: 100%;
+  height: 2.5em;
+  margin-top: 2em;
+  background-color: #00ADA5;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  line-height: 0em;
+}
+
+.login-form button:hover {
+  background-color: #008E87;
+}
+
+
+.LoginTitle {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+.signup-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1em;
+  font-size: 1em;
+
+}
+
+.signup-link {
+  color: #00ADA5;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.signup-link:hover {
+  color: #008E87;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+
+
+@media screen and (max-width: 650px) {
+  .login-form {
+    width: 90%;
+    padding: 0;
+  }
+
+  .login-form button {
+    width: 100%;
+  }
+
+  .LoginTitle {
+    width: 90%;
+    font-size: 32px;
+  }
+
+  .login-container {
+    margin: 2em auto;
+  }
+}
+
+/*Login-Dialog Login.tsx*/
+
+body.dark-mode {
+  background-color: #121212;
+}
+
+body.dark-mode .LoginTitle {
+  color: white;
+}
+
+body.dark-mode .login-form * {
+  color: white;
+}
+
+body.dark-mode path{
+  filter: invert(1);
+}
+
+body.dark-mode .login-form input {
+  background-color: #2c2c2c;
+
+}
+
+body.dark-mode .login-button {
+  background-color: #017771;
+}
+
+body.dark-mode .failed-error-message{
+  color: red;
+}
+
+body.dark-mode .signup-text p{
+  color: white;
+}
+
+body.dark-mode .signup-link {
+  color: #017771;
+}
+
+body.dark-mode .password-container .toggle-password{
+  filter: invert(1);
+}

@@ -1,0 +1,377 @@
+/* Standard-kategorie anzeigen KategorieAnzeigen.tsx */
+
+.kategorie-rectangle {
+  flex: 1 1 13em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 3px solid rgba(229, 247, 246, 1);
+  border-radius: 10px;
+  font-size: 1em;
+  font-weight: bold;
+  color: black;
+}
+
+.kategorien-container,
+.benutzerdefinierte-kategorien-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin-top: 1.5em;
+  justify-content: space-between;
+}
+
+.title-kategorie h3,
+.title-benutzerdefinierte-kategorie h3 {
+  margin-top: 1em;
+}
+
+
+
+body.dark-mode .title-kategorie h3,
+body.dark-mode .title-benutzerdefinierte-kategorie h3 {
+  color: white;
+}
+
+
+/* 
+p {
+  color: black;
+} */
+
+.button.is-primary.top-right:hover {
+  background-color: #009688;
+}
+
+/* Standard-kategorie anzeigen KategorieAnzeigen.tsx */
+
+/* Kategorie Seite Profil.tsx */
+.kategorie-button {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
+
+
+.kategorie-card {
+  width: 50%;
+  height: auto;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.create-card {
+  background: white;
+  padding: 1em;
+  border-radius: 20px;
+}
+
+.kategorie-form .label {
+  font-weight: bold;
+  color: black;
+}
+
+.kategorie-form .button.is-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  width: 14em;
+  margin-right: 10px;
+}
+
+.button.is-primary {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 0.25em;
+  cursor: pointer;
+}
+
+
+.kategorie-form .input::placeholder {
+  color: black;
+}
+
+.kategorie-form .help {
+  font-size: 0.875em;
+  color: #ccc;
+  margin-top: 0.25em;
+}
+
+.benutzer-rectangle {
+  flex: 1 1 13em;
+  max-width: calc(100% - 0.5em);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 3px solid rgba(229, 247, 246, 1);
+  border-radius: 10px;
+  font-size: 1em;
+  font-weight: bold;
+  color: black;
+}
+
+
+.benutzer-details {
+  flex-grow: 1;
+  margin-left: 0.5em;
+}
+
+.kategorie-name {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.maximales-Ausgabelimit {
+  font-size: 14px;
+  color: #666;
+  font-weight: bold;
+}
+
+.top-right {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
+.benutzerdefinierte-kategorien-container .options-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  top: 0em;
+  right: 0em;
+  position: relative;
+  color: black;
+}
+
+
+.options-dropdown {
+  position: absolute;
+  top: 3em;
+  right: 0.5em;
+  width: 5em;
+  background: white;
+  border-radius: 0.5em;
+  width: 8em;
+  height: 5.6em;
+  z-index: 10;
+}
+
+.options-dropdown a {
+  display: block;
+  padding: 0.5em 1em;
+  color: black;
+  font-size: 1.1em;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+.options-dropdown a:hover {
+  background: #ccc;
+}
+
+
+.benutzer-img {
+  background-color: rgba(229, 247, 246, 1);
+  padding: 10px;
+  border-radius: 2px 10px 10px 2px;
+}
+
+.kategorie-img {
+  background-color: rgba(229, 247, 246, 1);
+  padding: 10px;
+  border-radius: 1px 10px 10px 2px;
+}
+
+
+.kategorie-details {
+  flex-grow: 1;
+  margin-left: 0.5em;
+}
+
+.kategorien-tutorial,
+.benutzerdefinierte-kategorien-tutorial {
+  font-size: 14px;
+  margin: 0.5em 0 0.5em 1.5em;
+}
+
+
+.standard-options-button {
+  display: flex;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: black;
+}
+
+
+.standard-options-container {
+  position: relative;
+}
+
+.standard-options-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.kategorieTitleAndButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.kategorieErstellenButton {
+  border-radius: 8px;
+  padding: 12px;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #00ADA5;
+  color: white;
+
+}
+
+.kategorieErstellenButton:hover {
+  background-color: #008E87;
+}
+
+@media screen and (max-width: 850px) {
+
+  .kategorieTitleAndButton {
+    flex-direction: column;
+  }
+
+  .kategorieTitleAndButton {
+    margin-bottom: 1em;
+  }
+
+  .kategorieErstellenButton {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+
+  .kategorieErstellenButton {
+    width: 100%;
+  }
+
+  .kategorien-tutorial,
+  .benutzerdefinierte-kategorien-tutorial {
+
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 850px) {
+
+  .kategorie-card {
+    width: 90%;
+  }
+
+}
+
+
+
+body.dark-mode .kategorie-card {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .kategorie-form .label {
+  color: #ffffff;
+}
+
+body.dark-mode .kategorie-form .input {
+  background-color: #2c2c2c;
+  color: #ffffff;
+}
+
+body.dark-mode .kategorie-form .input::placeholder {
+  color: #aaaaaa;
+}
+
+
+
+body.dark-mode .kategorie-form .help {
+  color: #aaaaaa;
+}
+
+body.dark-mode .kategorie-rectangle,
+body.dark-mode .benutzer-rectangle {
+  border: 3px solid #1C2D2C;
+}
+
+body.dark-mode .kategorie-rectangle .kategorie-img {
+  background-color: #E3D2D3;
+  filter: invert(1);
+}
+
+
+body.dark-mode .benutzer-rectangle .kategorie-img {
+  background-color: #E3D2D3;
+  filter: invert(1)
+}
+
+body.dark-mode .kategorie-img,
+body.dark-mode .benutzer-img {
+  background-color: #1C2D2C;
+}
+
+body.dark-mode .kategorien-tutorial,
+body.dark-mode .benutzerdefinierte-kategorien-tutorial {
+  color: #aaaaaa;
+}
+
+body.dark-mode .benutzerdefinierte-kategorie-Name {
+  color: white;
+}
+
+body.dark-mode .kategorie-name {
+  color: white;
+}
+
+body.dark-mode .maximales-Ausgabelimit {
+  color: #cccccc;
+}
+
+body.dark-mode .standard-options-button,
+body.dark-mode .options-button {
+  filter: invert(1);
+}
+
+body.dark-mode .options-dropdown {
+  background-color: #2e2e2e;
+  border: 1px solid #555555;
+  color: #ffffff;
+}
+
+body.dark-mode .options-dropdown a {
+  color: #ffffff;
+}
+
+body.dark-mode .options-dropdown a:hover {
+  background-color: #444444;
+  color: #ffffff;
+}
+
+body.dark-mode .kategorieTitleAndButton {
+  color: #ffffff;
+}
+
+body.dark-mode .kategorieTitleAndButton h2 {
+  color: #ffffff;
+}
+
+
+body.dark-mode .kategorieErstellenButton {
+  background-color: #008e87;
+  color: #ffffff;
+}
+
+body.dark-mode .kategorieErstellenButton:hover {
+  background-color: #06f3e7;
+}

@@ -1,0 +1,103 @@
+/* Verhaeltnis.tsx */
+.container {
+  container-type: inline-size;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.income-expense-ratio-card {
+  background-color: #e8f8f9;
+  border-radius: 10px;
+  padding: 2em 1em;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.income-expense-ratio-card h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.income-expense-ratio-card .legend {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.income-expense-ratio-card .legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-right: 1em;
+}
+
+.income-expense-ratio-card .color-box {
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 3px;
+  margin-right: 0.125em;
+}
+
+.income-expense-ratio-card .no-data p {
+  color: #ff0000;
+  font-size: x-large;
+  margin-top: 20px;
+}
+
+.income-expense-ratio-card .no-data span[role="img"] {
+  font-size: 3em;
+}
+
+.income-expense-ratio-card canvas {
+  min-width: 4em;
+  min-height: 4em;
+  max-width: 16em;
+  max-height: 16em;
+}
+
+.verhaeltnis-loading-indicator {
+  margin-left: 20em;
+  margin-top: 10em;
+}
+
+/* Verhaeltnis.tsx */
+
+body.dark-mode .income-expense-ratio-card {
+  background-color: #1C2D2C;
+  color: #ffffff;
+}
+
+body.dark-mode .income-expense-ratio-card h2 {
+  color: #ffffff;
+}
+
+body.dark-mode .income-expense-ratio-card .legend-item span {
+  color: #cccccc;
+}
+
+body.dark-mode .income-expense-ratio-card .legend-item .color-box {
+  box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.5);
+}
+
+body.dark-mode .income-expense-ratio-card .no-data p {
+  color: #ff6961;
+}
+
+body.dark-mode .income-expense-ratio-card .no-data span[role="img"] {
+  font-size: 3em;
+  color: #cccccc;
+}
+
+body.dark-mode .income-expense-ratio-card canvas {
+  background-color: transparent;
+}
+
+body.dark-mode .verhaeltnis-loading-indicator {
+  color: #ffffff;
+}

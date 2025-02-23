@@ -1,0 +1,17 @@
+{
+    "greeting": "Welcome back, ",
+    "dashboard": "Dashboard",
+    "overview": "Overview",
+    "analytics": "Analytics",
+    "income_motnhly": "Income this month",
+    "expenses_monthly": "Expenses this month",
+    "remaining": "Remaining",
+    "bookings": "Transactions",
+    "more": "More",
+    "income": "Income",
+    "expenses": "Expenses",
+    "imprint": "Imprint",
+    "privacy": "Privacy",
+    "contact": "Contact us",
+    "loading": "Loading..."
+}

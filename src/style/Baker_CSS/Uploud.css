@@ -1,0 +1,87 @@
+.Upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Upload p {
+    color: white;
+    margin: 0;
+}
+
+.Upload input[type="file"] {
+    display: none;
+    /* Versteckt das Standard-Datei-Input */
+}
+
+.Upload label {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 7px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 100%;
+}
+
+.Upload label:hover {
+    background-color: #333;
+}
+
+.Upload label:active {
+    background-color: #555;
+}
+
+.Upload label{
+    background-color: black;
+}
+
+body.dark-mode .Upload label:hover{
+    background-color: #017771;
+}
+    
+
+.Upload .upload-spinner {
+    margin-left: 10px;
+}
+
+.Upload button {
+    display: none;
+    /* Versteckt die Upload-Schaltfläche */
+}
+
+.Upload img {
+    padding-left: 0.5em;
+}
+
+.upload-spinner {
+    margin-right: 10px;
+}
+
+.upload-button.loading {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* Media Query für kleinere Bildschirme */
+@media (max-width: 670px) {
+    .Upload label {
+        font-size: 14px;
+        height: 3em;
+    }
+
+    .Upload label p {
+        display: none;
+    }
+
+    .Upload img {
+        margin: 0;
+        padding-left: 0;
+        width: 18px;
+    }
+}

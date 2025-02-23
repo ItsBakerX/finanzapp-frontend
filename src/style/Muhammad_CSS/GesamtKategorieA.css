@@ -1,0 +1,89 @@
+.gesamt-kategorie-card-analysen {
+    background-color: #e8f8f9;
+    border-radius: 10px;
+    padding: 1.4em 1em;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    margin: 0;
+}
+
+.gesamt-kategorie-card-analysen .card-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gesamt-kategorie-card-analysen .chart-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.gesamt-kategorie-card-analysen .legend-containerK {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5em;
+    margin-left: 2em;
+}
+
+.gesamt-kategorie-card-analysen .legend-itemK {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.gesamt-kategorie-card-analysen .color-boxK {
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 3px;
+    margin-right: 0.125em;
+  }
+
+.gesamt-kategorie-card-analysen .time-periods button {
+    font-size: 1.2rem;
+    padding: 1em 1em;
+    cursor: pointer;
+    background-color: #e8f8f9;
+}
+
+.gesamt-kategorie-card-analysen .time-periods button.active {
+    color: rgba(0, 173, 165, 1);
+    font-weight: bold;
+    border-bottom: 2px solid rgba(0, 173, 165, 1);
+}
+
+.gesamt-kategorie-card-analysen .card-header-analysen p {
+    font-size: 20px;
+}
+
+.gesamt-kategorie-card-analysen .card-header-analysen h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    color: #00ADA5;
+}
+
+@media screen and (min-width: 54em) {
+    .gesamt-kategorie-card-analysen .chart-container {
+        flex-direction: row;
+    }
+}
+
+body.dark-mode .legend-itemK span{
+    color: #ffffff;
+}
+
+body.dark-mode .gesamt-kategorie-card-analysen .card-header-analysen p {
+    color: white;
+}
+
+
+
+

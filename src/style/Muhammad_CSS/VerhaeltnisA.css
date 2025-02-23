@@ -1,0 +1,58 @@
+.income-expense-ratio-card-analysen {
+  background-color: #e8f8f9;
+  border-radius: 10px;
+  padding: 1em;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.income-expense-ratio-card-analysen p{
+  font-size: 20px;
+}
+
+.income-expense-ratio-card-analysen .legend {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.income-expense-ratio-card-analysen .legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-right: 1em;
+}
+
+.income-expense-ratio-card-analysen .color-box {
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 3px;
+  margin-right: 0.125em;
+}
+
+.income-expense-ratio-card-analysen .no-data p {
+  color: #ff0000;
+  font-size: x-large;
+  margin-top: 20px;
+}
+
+.income-expense-ratio-card-analysen .no-data span[role="img"] {
+  font-size: 3em;
+}
+
+.income-expense-ratio-card-analysen canvas {
+  min-width: 2em;
+  min-height: 2em;
+  max-width: 16em;
+  max-height: 16em;
+}
+
+body.dark-mode .gesamt-kategorieLimit-card-analysen .card-header-kategorieLimit p{
+  color:white;
+}

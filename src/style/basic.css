@@ -1,0 +1,278 @@
+/* General & Mobile */
+
+* {
+    color: black;
+    /* box-sizing: border-box; */
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: bold;
+
+}
+
+h4 {
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
+::-webkit-scrollbar {
+    width: 0.5em;
+    z-index: 1;
+}
+
+::-webkit-scrollbar-track {
+    background: hsl(177 100%, 28%);
+    border-radius: 100vw;
+    margin-block: .5em;
+}
+
+::-webkit-scrollbar-thumb {
+    background: hsl(177, 53%, 93%);
+    border: .1em solid hsl(177 100%, 28%);
+    border-radius: 100vw;
+}
+
+
+
+.primary-button {
+    /* height: 40px; */
+    min-width: 140px;
+    background-color: #00ADA5;
+    color: white;
+    border-radius: 12px;
+    border: none;
+    margin-right: 1em;
+}
+
+.primary-button:hover {
+    background-color: #008E87;
+}
+
+.selectedContent h3 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+
+
+@media screen and (min-width: 1000px) {
+    h1 {
+        font-size: 36px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .selectedContent h3 {
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 34px;
+    }
+
+    #profilMain h2,
+    #buchungenAnzeigenMain h2 {
+        font-size: 40px;
+    }
+}
+
+
+.eingabeFeld,
+.selectBox {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+
+#datum.eingabeFeld {
+    padding: 9px 10px;
+}
+
+.selectBox {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='292.4'%20height='292.4'%3E%3Cpath%20fill='%23131313'%20d='M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z'%2F%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.7rem top 50%;
+    background-size: 0.65rem auto;
+}
+
+
+.toggle-button {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+body.dark-mode .radio {
+    color: white;
+}
+
+body.dark-mode .toggle-button {
+    border: 1px solid white;
+}
+
+.toggle-button input[type="radio"] {
+    display: none;
+}
+
+.toggle-button label {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.toggle-button label.selected {
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width: 650px) {
+
+    .eingabeFeld,
+    .selectBox {
+        font-size: 14px;
+    }
+
+    .toggle-button label {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .selectedContentHeader {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    ::-webkit-scrollbar {
+        width: 0.7em;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border: .15em solid hsl(177 100%, 28%);
+    }
+}
+
+@media screen and (max-width: 850px) {
+    ::-webkit-scrollbar {
+        width: 0.2em;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border: .05em solid hsl(177 100%, 28%);
+    }
+}
+
+.submitButton {
+    background-color: #00ADA5 ;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none
+}
+
+.submitButton:hover {
+    background-color: #008E87 ;
+}
+
+
+body.dark-mode .submitButton {
+    background-color: #00ADA5;
+}
+
+body.dark-mode .submitButton:hover {
+    background-color: #008E87;
+}
+
+.buttonAbbrechen {
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+ .buttonAbbrechen {
+    color: white;
+    background-color: rgb(20, 20, 20);
+
+}
+
+ .buttonAbbrechen:hover {
+    background-color:rgb(60, 60, 60);
+}
+
+body.dark-mode .buttonAbbrechen {
+    background-color: rgb(20, 20, 20);
+}
+
+
+body.dark-mode .buttonAbbrechen:hover {
+    background-color:rgb(60, 60, 60);
+}
+
+
+
+
+
+
+
+/* .button {
+    background-color: #0055ff;
+} */
+
+/* .Toastify__progress-bar-theme--light {
+    background: var(--toastify-color-progress-success);
+} */
+/* 
+.Toastify__progress-bar {
+    background-color: #28a745 !important;
+} */
+
+:root {
+    /* --toastify-color-progress-light: #28a745; */
+    /* Progress-Bar-Farbe auf Grün setzen */
+}

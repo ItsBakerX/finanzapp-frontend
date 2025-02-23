@@ -1,0 +1,69 @@
+.prozentual-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prozentual-card {
+  background-color: #e8f8f9;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.prozentual-header p {
+  font-size: 1.3rem;
+  color: black;
+}
+
+.prozentual-chart-container {
+  display: flex;
+  flex-grow: 1;
+  width: 100%; 
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.prozentual-chart {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.prozentual-chart p{
+  color: white;
+
+}
+
+.prozentual-legend-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.7em;
+  margin-left: 2em;
+}
+
+.prozentual-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.prozentual-color-box {
+  width: 1em;
+  height: 1em;
+  border-radius: 0.2em;
+}
+
+body.dark-mode .prozentual-header p {
+  color: white;
+}

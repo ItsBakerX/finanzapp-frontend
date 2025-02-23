@@ -1,0 +1,48 @@
+/* footer.tsx */
+.footer {
+  position: relative;
+  color: rgb(0, 0, 0);
+  padding: 1em;
+  margin-top: 0;
+  background-color: unset;
+
+}
+
+
+.footer .logo {
+  width: 7em;
+  height: auto;
+  margin-bottom: 1em;
+}
+
+.footer .foot {
+  width: 8em;
+  height: auto;
+  margin-bottom: 2em;
+}
+
+body.dark-mode .footer {
+  background-color: #121212;
+}
+
+body.dark-mode .footer .text * {
+  color: white;
+}
+
+.footer b {
+  font-weight: 400;
+}
+
+.logo.dark-mode-logo {
+  display: none;
+}
+
+body.dark-mode .logo.light-mode-logo {
+  display: none;
+}
+
+body.dark-mode .logo.dark-mode-logo {
+  display: inline;
+}
+
+/* footer.tsx */

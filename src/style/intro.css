@@ -1,0 +1,60 @@
+.intro-button {
+    width: 1.8em;
+    height: 1.8em;
+}
+
+.intro-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 1em 0;
+}
+
+.dashboard-group .intro-wrap {
+    align-items: flex-start;
+}
+
+#profilMain .intro-wrap h2 {
+    margin-bottom: 0;
+}
+
+.introjs-progressbar {
+    background-color: #00ADA5 !important;
+}
+
+.introjs-helperLayer {
+    background-color: white;
+    z-index: 9999;
+}
+
+body.dark-mode .introjs-helperLayer {
+    background-color: rgb(45, 45, 45);
+}
+
+
+@media screen and (min-width: 37.5em) {
+    .intro-button {
+        margin-left: .5em;
+    }
+
+    .intro-wrap {
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+
+    .dashboard-group .intro-wrap {
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 53.125em) {
+    #profilMain .intro-wrap {
+        margin-bottom: 2.5em;
+        padding: 0;
+    }
+}
+
+.introjs-overlay {
+    z-index: 1;
+}

@@ -1,0 +1,101 @@
+/* Uebersicht.tsx */
+
+.dashboard {
+  width: 100%;
+}
+
+.dashboard .card {
+  background-color: #e8f8f9;
+  border-radius: 0.5em;
+  padding: 1.25em;
+  text-align: left;
+  width: 100%;
+  box-shadow: none;
+  overflow: hidden;
+}
+
+.dashboard .card h2.smaller {
+  color: unset;
+  font-size: 24px;
+}
+
+.dashboard .card-content {
+  padding: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.dashboard .card-content img {
+  width: 70px;
+  height: 70px;
+  align-self: flex-end;
+}
+
+.dashboard .content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 80%;
+  margin: 0;
+}
+
+.dashboard .content h2 {
+  font-size: 32px;
+  margin-bottom: 0.5em;
+}
+
+.dashboard .content p {
+  font-size: 14px;
+  margin: 0;
+}
+
+@media screen and (min-width: 48em) {
+  .dashboard .card {
+    height: 140px;
+    width: 32%;
+  }
+
+  .dashboard {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .dashboard .card-content img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+
+/* Uebersicht.tsx */
+
+
+body.dark-mode .analysen .card {
+  background-color: #2e2e2e;
+  border-radius: 0.5em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode .analysen .content h2.smaller {
+  font-size: 24px;
+  color: white;
+}
+
+body.dark-mode .analysen .content p {
+  font-size: 14px;
+  color: #bbbbbb;
+}
+
+body.dark-mode .analysen .content h2 {
+  font-size: 32px;
+  margin-bottom: 0.5em;
+  color: #ffffff;
+}
+
+body.dark-mode .analysen .content p {
+  font-size: 14px;
+  color: #cccccc;
+}

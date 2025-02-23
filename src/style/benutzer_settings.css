@@ -1,0 +1,67 @@
+.input-wrapper {
+	margin-bottom: 1em;
+	width: 80%;
+}
+
+.benutzerEinstellungen .eingabeFeld {
+	margin-bottom: 1em;
+}
+
+.danger-zone {
+	margin-top: 3em;
+}
+
+.dangerButton {
+	background-color: #d60000;
+}
+
+.dangerButton:hover {
+	background-color: #b83636;
+}
+
+body.dark-mode .dangerButton:hover {
+	background-color: #b83636;
+}
+
+body.dark-mode .password-input svg{
+	filter: invert(1);
+}
+
+
+.toggle-password {
+	cursor: pointer;
+	font-size: 1.2em;
+	margin-left: -40px;
+}
+
+@media screen and (max-width: 850px) {
+	.benutzerEinstellungen .selectedContentHeader {
+		text-align: center;
+	}
+
+	.input-wrapper {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 650px) {
+
+
+	.benutzerEinstellungen .eingabeFeld {
+		font-size: 14px;
+	}
+
+	.danger-zone {
+		margin-top: 2em;
+	}
+
+	.benutzerEinstellungen .button {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.benutzerEinstellungen .button {
+		width: 100%;
+	}
+}

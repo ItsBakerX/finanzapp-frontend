@@ -1,0 +1,99 @@
+/* BuchungNew.tsx */
+.BuchungNew {
+    max-width: 37.5em;
+    margin: 0 auto;
+    padding: 1.25em;
+    background-color: #f9f9f9;
+    border-radius: 0.5em;
+    box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.1);
+  }
+  
+  .BuchungNew .field {
+    margin-bottom: 1.25em;
+  }
+  
+  .BuchungNew label {
+    display: block;
+    margin-bottom: 0.3125em; 
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .BuchungNew .input,
+  .BuchungNew .select select {
+    width: 100%;
+    padding: 0.625em; 
+    border: 0.0625em solid #ccc; 
+    border-radius: 0.25em; 
+    box-sizing: border-box;
+    font-size: 1em; 
+    margin-bottom: 2em;
+    background: #DCDCDC;
+  }
+  
+  .BuchungNew .input::placeholder,
+  .BuchungNew .select select::placeholder {
+    color: black;
+  }
+  
+  .BuchungNew .input.is-rounded,
+  .BuchungNew .select.is-rounded select {
+    border-radius: 1.25em; 
+    color: black;
+  }
+  
+  .BuchungNew .control {
+    margin-top: 1.25em; 
+  }
+  
+  .BuchungNew .control .radio {
+    display: inline-block;
+    margin-right: 0.9375em; 
+    font-size: 1em; 
+    color: #333;
+    margin-bottom: 1.5em;
+  }
+  
+  .BuchungNew .buchungsart .radio {
+    display: inline-block;
+    margin-right: 0.9375em;
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 2em;
+  }
+  
+  .BuchungNew .button {
+    padding: 0.625em 1.25em;
+    border: none;
+    border-radius: 0.25em;
+    font-size: 1em;
+    cursor: pointer;
+    margin-right: 0.625em;
+  }
+  
+  .BuchungNew .button.is-primary {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .BuchungNew .button.is-danger {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .BuchungNew .button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Flexbox container for Kategorie and Typ */
+  .BuchungNew .field-row {
+    display: flex;
+    margin-bottom: 3em;
+  }
+  
+  .BuchungNew .field-kategorie,
+  .BuchungNew .field-typ {
+    /* flex: 1; */
+    margin-right: 1em;
+  }
+  /* BuchungNew.tsx */

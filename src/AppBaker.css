@@ -1,0 +1,42 @@
+
+.navigate-button {
+  position: absolute;
+  top: -6em;
+  right: 0.625em;
+  padding: 0.625em 1.25em;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0.7em;
+  cursor: pointer;
+}
+
+.navigate-button:hover {
+  background-color: #0056b3;
+}
+
+/* Start.tsx */
+
+/* Header.tsx */
+.header .navbar-item.has-dropdown.is-hoverable {
+  border: 1.5px solid black;
+  border-radius: 20px;
+  color: black
+}
+
+.header .navbar-item.has-dropdown.is-hoverable .navbar-link {
+  font-size: medium;
+  color: black;
+}
+
+/* Header.tsx */
+
+
+
+
+
+
+
+
+
+

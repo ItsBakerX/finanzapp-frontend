@@ -1,0 +1,62 @@
+.willkommenspopup #body-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 300ms ease-in-out;
+}
+
+.willkommenspopup .dialog {
+    position: fixed;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: white;
+    color: black;
+    border-radius: 8px;
+    box-shadow: 8px 8px 16px rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 300ms ease-in-out;
+}
+
+.willkommenspopup #body-overlay.sichtbar,
+.willkommenspopup .dialog.sichtbar {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.willkommenspopup .custom-modal__backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    cursor: pointer;
+}
+
+.willkommenspopup .popupContent {
+    text-align: center;
+}
+
+.willkommenspopup .close-btn {
+    background-color: #000;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 7px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.willkommenspopup .close-btn:hover {
+    color: #ff0000;
+}

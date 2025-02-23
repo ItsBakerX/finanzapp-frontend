@@ -1,0 +1,75 @@
+/* AlleBuchungen.tsx */
+.pageAlleBuchungen {
+  width: 100%;
+  display: flex;
+}
+
+#buchungenAnzeigenMain {
+  display: flex;
+  gap: 5em;
+  padding: 1.75em 2em;
+  margin: 1.25em 0.75em;
+  background-color: white;
+  border-radius: 10px;
+}
+
+#buchungenAnzeigenMain .sort-options {
+  display: flex;
+  border: 2px solid black;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+/* Label für jede Option */
+#buchungenAnzeigenMain .sort-options label {
+  flex: 1;
+  text-align: center;
+  padding: 10px 0;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+  color: black;
+}
+
+/* Verstecke die Standard-Radio-Buttons */
+#buchungenAnzeigenMain .sort-options input[type="radio"] {
+  display: none;
+}
+
+/* Styling für die aktive Option */
+#buchungenAnzeigenMain .sort-options input[type="radio"]:checked+label {
+  background-color: black;
+  color: white;
+}
+
+#buchungenAnzeigenMain .sort-options label:hover {
+  background-color: black;
+  color: white;
+}
+
+/* AlleBuchungen.tsx */
+
+
+/* AlleBuchungen.tsx */
+#buchungenAnzeigenMain .AlleBuchungen .kategorie-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  text-align: left;
+  margin-left: 1.5em;
+}
+
+/* AlleBuchungen.tsx */
+
+#buchungenAnzeigenMain .buchungen-list {
+  display: flex;
+  flex-direction: column;
+}
+
+#buchungenAnzeigenMain .AlleBuchungen h1 {
+  color: black;
+}

@@ -1,0 +1,140 @@
+/* Overlay-Styling */
+.mitteilungen-overlay {
+  position: fixed;
+  top: 80px;
+  right: 10%;
+  width: 35em;
+  height: 30em;
+  background: #e8f8f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 1000;
+  border-radius: 10px;
+  box-shadow: 0 0.5em 1.25em rgba(0, 0, 0, 0.3);
+  overflow-y: auto;
+  /* Ermöglicht Scrollen bei Überlauf */
+  padding: 1.25em;
+  transition: top 0.3s ease;
+}
+
+.header--scrolled .mitteilungen-overlay {
+  top: 56px;
+}
+
+.mitteilungenHeader {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1.25em;
+}
+
+.mitteilungenBody {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+body.dark-mode .mitteilungen-overlay {
+  background-color: #121212;
+}
+
+body.dark-mode .mitteilungen-overlay h2 {
+  color: #ffffff;
+}
+
+body.dark-mode .mitteilungen-overlay .close-button {
+  color: #ffffff;
+}
+
+body.dark-mode .notification {
+  background: #000000;
+}
+
+body.dark-mode .notification p {
+  color: #ffffff;
+}
+
+body.dark-mode .mitteilungenBody p{
+  color: white;
+}
+
+.mitteilungen-overlay h2 {
+  color: #000000;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.8rem;
+}
+
+.mitteilungen-overlay .close-button:hover {
+  color: #ff4d4d;
+}
+
+/* Notification-Karte */
+.notification {
+  background: #ffffff;
+  padding: 0.9375em 1.25em;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.notification:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.notification p {
+  margin: 0 0 0.625em;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Button-Styling */
+.notification button {
+  align-self: flex-end;
+  /* background: #00ADA5; */
+  color: #00ADA5;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.notification button:hover {
+  /* background-color: #017771; */
+  color: #017771;
+}
+
+.notification button:active {
+  /* background-color: #e8f8f9; */
+  color: #e8f8f9;
+  transform: scale(0.98);
+}
+
+@media screen and (max-width: 1000px) {
+  .mitteilungen-overlay {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .mitteilungen-overlay {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .mitteilungen-overlay {
+    right: 25%;
+  }
+}

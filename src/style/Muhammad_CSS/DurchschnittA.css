@@ -1,0 +1,87 @@
+.durschschnitt-card-analysen {
+  background-color: #e8f8f9;
+  border-radius: 1em;
+  padding: 1.4em 1em;
+  text-align: center;
+  width: 100%;
+}
+
+.durschschnitt-card-analysen h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  color: #00ADA5;
+}
+
+.durschschnitt-card-analysen p {
+  font-size: 20px;
+}
+
+.durschschnitt-card-analysen .time-periods {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.durschschnitt-card-analysen .time-periods button {
+  background: none;
+  border: none;
+  font-size: 14px;
+  color: #666;
+  cursor: pointer;
+  width: 100%;
+}
+
+.durschschnitt-card-analysen .time-periods button.active {
+  color: rgba(0, 173, 165, 1);
+  font-weight: bold;
+  border-bottom: 2px solid rgba(0, 173, 165, 1);
+}
+
+
+body.dark-mode .durschschnitt-card-analysen {
+  background-color: #1C2D2C;
+  color: #ffffff;
+}
+
+body.dark-mode .income-expense-ratio-card-analysen{
+  background-color: #1C2D2C;
+  color: #ffffff;
+}
+
+body.dark-mode .income-expense-ratio-card-analysen p{
+  color: white;
+}
+
+body.dark-mode .income-expense-ratio-card-analysen .legend-item span{
+  background-color: #1C2D2C;
+  color: #ffffff;
+}
+
+body.dark-mode .gesamt-kategorie-card-analysen{
+  background-color: #1C2D2C;
+  color: #ffffff;
+}
+
+body.dark-mode .prozentual-card{
+  background-color: #1C2D2C;
+  color: #ffffff;
+}
+
+body.dark-mode .gesamt-kategorieLimit-card-analysen{
+  background-color: #1C2D2C;
+  color: #ffffff;
+}
+
+body.dark-mode .gesamt-kategorieLimit-card-analysen{
+  background-color: #1C2D2C;
+}
+
+
+body.dark-mode .durschschnitt-card-analysen p {
+  color: white;
+}
+
+
+

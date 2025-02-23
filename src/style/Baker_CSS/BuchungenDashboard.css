@@ -1,0 +1,25 @@
+/* BuchungenDashboard.tsx */
+
+.buchungsliste h2 {
+  margin-bottom: 1em;
+  font-size: 2em;
+  font-weight: bold;
+  color: black;
+}
+
+.buchung-gruppe {
+  margin: 1.875em 0;
+}
+
+.buchung-gruppe h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+body.dark-mode .buchung-gruppe:last-child {
+  border-bottom: none;
+}
+
+body.dark-mode .buchung-gruppe h3 {
+  color: #cccccc;
+}

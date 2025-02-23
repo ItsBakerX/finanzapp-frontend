@@ -1,0 +1,39 @@
+/* AlleBuchungen.tsx */
+.kategorie-section {
+    margin-bottom: 1em;
+}
+
+/* AlleBuchungen.tsx */
+
+.wiederkehrende-buchungen .buchungen-list,
+.offene-buchungen .kategorie-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.wiederkehrende-buchungen h1,
+.offene-buchungen .kategorie-name {
+    color: black;
+}
+
+.selectedContent .wiederkehrende-buchungen h3,
+.selectedContent .offene-buchungen h3 {
+    font-size: 18px;
+}
+
+
+@media screen and (min-width: 1500px) {
+
+    .selectedContent .wiederkehrende-buchungen h3,
+    .selectedContent .offene-buchungen h3 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    .selectedContent .wiederkehrende-buchungen h3,
+    .selectedContent .offene-buchungen h3 {
+        font-size: 16px;
+    }
+}

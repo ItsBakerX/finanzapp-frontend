@@ -1,0 +1,95 @@
+/* BuchungDashboard.tsx */
+.buchung-dashboard .buchung-item-dashboard {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 50px;
+  position: relative;
+}
+
+.buchung-dashboard .buchung-item-dashboard:hover {
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.15);
+}
+
+.buchung-dashboard .buchung-icon-dashboard {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.buchung-dashboard .buchung-icon-dashboard img {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(229, 247, 246, 1);
+  padding: 6px;
+  border-radius: 10px;
+}
+
+.buchung-dashboard .buchung-details-dashboard {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 0 0 0.625em;
+}
+
+.buchung-dashboard .buchung-details-dashboard h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.buchung-dashboard .buchung-details-dashboard p {
+  margin: 0;
+  color: #777;
+}
+
+.buchung-dashboard .buchung-amount {
+  font-weight: bold;
+  margin: 0;
+  position: absolute;
+  right: 0;
+}
+
+.buchung-dashboard .buchung-amount.positive {
+  color: green;
+}
+
+.buchung-dashboard .buchung-amount.negative {
+  color: red;
+}
+
+/* BuchungDashboard.tsx */
+
+
+body.dark-mode .buchung-dashboard .buchung-item-dashboard:hover {
+  box-shadow: 0 0px 12px rgba(255, 255, 255, 0.2);
+}
+
+body.dark-mode .buchung-dashboard .buchung-icon-dashboard img {
+  background-color: #E3D2D3;
+  filter: invert(1);
+}
+
+
+
+
+body.dark-mode .buchung-dashboard .buchung-details-dashboard h3 {
+  color: #ffffff;
+}
+
+body.dark-mode .buchung-dashboard .buchung-details-dashboard p {
+  color: #cccccc;
+}
+
+body.dark-mode .buchung-dashboard .buchung-amount.positive {
+  color: #00ff00;
+}
+
+body.dark-mode .buchung-dashboard .buchung-amount.negative {
+  color: #ff6961;
+}

@@ -1,0 +1,388 @@
+/*Header Navbar*/
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000000000;
+  transition: padding 0.3s ease, backdrop-filter 0.3s ease;
+  padding: 1.25em 1em;
+}
+
+.header--scrolled {
+  padding: 0.5em 1em;
+  backdrop-filter: blur(4px);
+}
+
+
+.header__top-open {
+  background-color: white;
+}
+
+
+.header__top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header__top-nav-img {
+  max-height: 2.5em;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__list li,
+.Select {
+  margin: 0 0 0 2em;
+}
+
+.nav__item {
+  margin-left: 1.25em;
+  display: flex;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav__link--active {
+  background-color: #e6e6e6ac;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  font-weight: bold;
+}
+
+
+.nav__link:hover {
+  transform: scale(1.1);
+}
+
+.header__nav-btn {
+  display: none;
+}
+
+.nav-icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5em;
+  height: 2.5em;
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.nav-icon-bar {
+  width: 1.875em;
+  height: 0.3125em;
+  border-radius: 4px;
+  margin: 0.1875em 0;
+  background-color: #000;
+  position: relative;
+  transition: all 0.3s;
+}
+
+body.dark-mode .nav-icon-bar {
+  background-color: white;
+}
+
+.nav-icon--active :first-child {
+  transform: rotate(45deg) translateY(0.47em);
+}
+
+.nav-icon--active :last-child {
+  transform: rotate(-45deg) translateY(-0.47em);
+}
+
+.loginButton {
+  width: 8em;
+  height: 2.2em;
+  background-color: #000;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginButton .nav__link {
+  color: #fff;
+  font-weight: 500;
+}
+
+.loginButton:hover {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  border: 1.5px solid #000;
+}
+
+.loginButton:hover:hover a {
+  color: black;
+}
+
+.logoutButton {
+  width: 8em;
+  height: 2.2em;
+  border: 1.5px solid black;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoutButton a {
+  color: black;
+}
+
+.logoutButton:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+.logoutButton:hover a {
+  color: white;
+}
+
+.buttonBuchungErstellen {
+  height: 2.2em;
+  background-color: #00ADA5;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 20px;
+  color: #fff;
+  font-weight: 500;
+  transition: transform 0.3s;
+}
+
+.buttonBuchungErstellen:hover {
+  background-color: #008E87;
+}
+
+.navbar-item {
+  position: relative;
+  display: inline-block;
+}
+
+
+
+
+
+.navbar-link .navbar-icon {
+  margin-left: 0.5em;
+  font-size: 0.8em;
+}
+
+.nav__item img {
+  width: 25px;
+}
+
+body.dark-mode .nav__list>.nav__item:nth-child(6) {
+  filter: invert(1);
+}
+
+
+.nav__item img {
+  transition: 0.3s;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav__item img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.navbar-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
+  border-radius: 0.25em;
+  z-index: 1000;
+  min-width: 10em;
+}
+
+.navbar-item:hover .navbar-dropdown {
+  display: block;
+}
+
+.navbar-dropdown .navbar-item {
+  padding: 0.5em 1em;
+  font-size: 0.9rem;
+  color: #000;
+  text-decoration: none;
+}
+
+.navbar-dropdown .navbar-item:hover {
+
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.navbar-dropdown .navbar-item.is-selected {
+  font-weight: bold;
+  color: #000;
+}
+
+.mobileMenuWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.desktopMenuWrapper {
+  display: flex;
+}
+
+
+/* löst das problem mit buchung hinzufügen overlay im header*/
+.buchung_open {
+  height: 100vh;
+}
+
+
+@media (max-width: 1000px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    width: auto;
+    transition: all 0.3s;
+  }
+
+  .header__top {
+    margin: 0 1em;
+  }
+
+  .nav.header__top-nav--mobile {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+
+    /*Leider musste ich diesen Wert hardcoden, damit es an Header angeklebt ist bei Animation*/
+    top: 80px;
+
+    right: 0;
+    z-index: 99;
+    background-color: #ffffff;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 1em 1em;
+  }
+
+  .header--scrolled .nav.header__top-nav--mobile {
+    /*Leider musste ich diesen Wert hardcoden, damit es an Header angeklebt ist bei Animation*/
+    top: 56px;
+  }
+
+  body.dark-mode .nav.header__top-nav--mobile {
+    background-color: #121212;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav__list li {
+    margin: 1em 0;
+  }
+
+  .nav__item {
+    margin: 0.625em 0;
+    text-align: center;
+  }
+
+  .header__nav-btn {
+    display: block;
+  }
+
+
+  .buttonBuchungErstellen {
+    margin-right: 1.125em;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header {
+    padding: 1.25em 0;
+  }
+
+  .header--scrolled {
+    padding: 0.5em 0;
+  }
+}
+
+
+body.dark-mode .header {
+  background-color: #121212;
+}
+
+body.dark-mode .nav__link {
+  color: #ffffff;
+}
+
+body.dark-mode .nav__link--active {
+  background-color: #333333;
+}
+
+body.dark-mode .buttonBuchungErstellen {
+  background-color: #008e87;
+  color: #ffffff;
+}
+
+body.dark-mode .buttonBuchungErstellen:hover {
+  background-color: #00ada5;
+}
+
+
+
+body.dark-mode .logoutButton {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+
+body.dark-mode .logoutButton:hover {
+  background-color: #444444;
+  color: #ffffff;
+}
+
+
+body.dark-mode .header__top-open {
+  background-color: #121212;
+  color: #ffffff;
+}

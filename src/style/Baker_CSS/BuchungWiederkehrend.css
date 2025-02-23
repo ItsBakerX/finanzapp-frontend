@@ -1,0 +1,92 @@
+.buchung-wiederkehrend {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border: 2px solid #E5F7F6;
+  border-radius: 8px;
+  margin: 10px auto;
+  width: 90%;
+  height: 60px;
+}
+
+.buchung-wiederkehrend .buchung-icon {
+  flex: 0 0 auto;
+  background-color: #E5F7F6;
+  border-radius: 2px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  margin-left: -1em;
+}
+
+.buchung-wiederkehrend .buchung-icon img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.buchung-wiederkehrend .buchung-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+ 
+  gap: 20px;
+  margin-right: 3em;
+  font-size: large;
+  color: black;
+}
+
+.buchung-wiederkehrend .buchung-details> :nth-child(2),
+.buchung-wiederkehrend .buchung-details> :nth-child(3) {
+  margin-top: 1em;
+  color: black;
+}
+
+.buchung-wiederkehrend .buchung-details h3 {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+  flex: 1;
+  /* Platz zwischen den Texten gleichmäßig */
+}
+
+.buchung-wiederkehrend .buchung-details p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #666;
+  flex: 1;
+  text-align: center;
+  /* Zentriert den Text */
+}
+
+.buchung-wiederkehrend .buchung-amount {
+  font-weight: bold;
+  font-size: 1em;
+  margin-left: 15px;
+  flex-shrink: 0;
+  /* Verhindert, dass die Größe bei Platzmangel verändert wird */
+}
+
+.buchung-wiederkehrend .buchung-amount.positive {
+  color: #4CAF50;
+  /* Grün für positive Werte */
+}
+
+.buchung-wiederkehrend .buchung-amount.negative {
+  color: #E53935;
+  /* Rot für negative Werte */
+}
+
+.buchung-wiederkehrend .button {
+  background: red;
+  border: none;
+}
+
+.buchung-wiederkehrend .options-container {
+  position: relative;
+}
